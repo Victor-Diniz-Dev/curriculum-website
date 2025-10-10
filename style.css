@@ -95,38 +95,41 @@ section {
    HERO IMAGE
 =========================== */
 .hero-image {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .hero-image img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid rgba(0, 224, 199, 0.6);
-  box-shadow: 0 0 25px rgba(111, 127, 255, 0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(0, 224, 199, 0.6);
+    box-shadow: 0 0 25px rgba(111, 127, 255, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
 }
 
 .hero-image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 35px rgba(0, 224, 199, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 224, 199, 0.4);
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 25px rgba(111, 127, 255, 0.25);
-  }
-  50% {
-    box-shadow: 0 0 35px rgba(0, 224, 199, 0.5);
-  }
+
+    0%,
+    100% {
+        box-shadow: 0 0 25px rgba(111, 127, 255, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 0 35px rgba(0, 224, 199, 0.5);
+    }
 }
 
 .hero-image img {
-  animation: pulse-glow 3s infinite ease-in-out;
+    animation: pulse-glow 3s infinite ease-in-out;
 }
 
 
@@ -174,46 +177,41 @@ section {
     box-shadow: 0 4px 15px rgba(0, 224, 199, 0.3);
 }
 
-/* ===========================
-   STACK SECTION
-=========================== */
+/* =========================== STACK SECTION =========================== */
 .stack {
-  text-align: center;
-  padding: 6rem 0;
-  position: relative;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 15, 31, 0) 0%,       /* transparência total no topo */
-    rgba(10, 15, 31, 0.9) 40%,    /* transição suave */
-    #0a0f1f 100%                  /* cor sólida da seção stack */
-  );
+    text-align: center;
+    padding: 6rem 0;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(10, 15, 31, 0) 0%,
+            /* transparência total no topo */
+            rgba(10, 15, 31, 0.9) 40%,
+            /* transição suave */
+            #0a0f1f 100%
+            /* cor sólida da seção stack */
+        );
 }
 
 .stack::before {
-  content: "";
-  position: absolute;
-  top: -80px;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 15, 31, 0),
-    rgba(10, 15, 31, 0.7)
-  );
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(10, 15, 31, 0), rgba(10, 15, 31, 0.7));
+    pointer-events: none;
 }
 
 .stack::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--primary), transparent);
-  opacity: 0.3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    opacity: 0.3;
 }
 
 .stack h3 {
@@ -266,7 +264,6 @@ section {
         font-size: 1.8rem;
     }
 }
-
 
 /* ===========================
    PROJECTS
