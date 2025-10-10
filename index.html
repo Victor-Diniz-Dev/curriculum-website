@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Diniz | Desenvolvedor Full Stack</title>
+    <meta name="description"
+        content="Portfólio de Victor Diniz — desenvolvedor full stack apaixonado por automação, design e tecnologia.">
+
+    <!-- Fonte recomendada (Space Grotesk + Inter) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Victor Diniz</h1>
+
+            <!-- Botão mobile -->
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#stack">Stacks</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero fade-in">
+        <div class="container">
+            <div class="hero-image">
+                <img src="assets/images/victor.jpeg" alt="Foto de Victor Diniz">
+            </div>
+            <h2 id="hero-text"></h2>
+            <p>Sou um desenvolvedor full stack em formação, com foco em automação, front-end e interfaces inteligentes.
+            </p>
+            <a href="#projects" class="btn">Ver Projetos</a>
+
+        </div>
+    </section>
+
+    <!-- STACK SECTION -->
+    <section id="stack" class="stack">
+        <div class="container">
+            <h3>Main stacks</h3>
+            <div class="stack-icons">
+                <div class="stack-item"><i class="fa-brands fa-react"></i><span>React</span></div>
+                <div class="stack-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                <div class="stack-item"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                <div class="stack-item"><i class="fa-solid fa-wind"></i><span>Tailwind</span></div>
+                <div class="stack-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                <div class="stack-item"><i class="fa-solid fa-cloud"></i><span>APIs REST</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h3>Projetos em Destaque</h3>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h4>Automação Python</h4>
+                    <p>Script que automatiza tarefas repetitivas, integrando APIs e gerando relatórios inteligentes.</p>
+                    <span class="tech">Python</span>
+                </article>
+
+                <article class="project-card">
+                    <h4>Interface de Dashboard</h4>
+                    <p>Layout de dashboard moderno desenvolvido em HTML, CSS e JavaScript, com visual clean e intuitivo.
+                    </p>
+                    <span class="tech">HTML • CSS • JS</span>
+                </article>
+
+                <article class="project-card">
+                    <h4>Protótipo React</h4>
+                    <p>Primeiro projeto experimental com React, explorando componentização e hooks básicos.</p>
+                    <span class="tech">React</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h3>Sobre Mim</h3>
+            <p>Sou apaixonado por transformar ideias em interfaces funcionais. Tenho experiência com automações em
+                Python e uma base sólida em front-end. Estou expandindo meus conhecimentos para me tornar um
+                desenvolvedor full stack completo.</p>
+            <p>Busco oportunidades para aprender, evoluir e contribuir com soluções que unam design, lógica e impacto
+                real.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>© 2025 Victor Diniz — Feito com ❤️ e carinho.</p>
+            <div class="socials">
+                <a href="https://github.com/Victor-Diniz-Dev" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/v1ctordiniz/   " target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&to=victordinizdev@gmail.com" target="_blank"
+                    aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
