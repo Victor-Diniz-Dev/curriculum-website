@@ -67,12 +67,11 @@ section {
     padding: 1rem 0;
 }
 
-.logo {
-    font-family: var(--font-title);
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--primary);
-    letter-spacing: 0.5px;
+.logo-img {
+  height: 50px;       /* ajuste fino conforme necessário */
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
 }
 
 .nav ul {
