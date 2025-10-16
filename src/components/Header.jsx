@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="container">
         <a href="#hero">
-            <img src="/public/assets/images/logo.png" alt="Victor Diniz Logo" className="logo-img" />
+            <img src="/assets/images/logo.png" alt="Victor Diniz Logo" className="logo-img" />
         </a>
 
 
