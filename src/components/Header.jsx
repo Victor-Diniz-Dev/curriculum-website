@@ -6,7 +6,11 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <h1 className="logo">Victor Diniz</h1>
+        <a href="#hero">
+            <img src="/public/assets/images/logo.png" alt="Victor Diniz Logo" className="logo-img" />
+        </a>
+
+
 
         {/* Botão mobile */}
         <button

@@ -5,7 +5,7 @@ function Hero() {
 
   // Typewriter effect
   useEffect(() => {
-    const msg = "CConstruindo experiências digitais que unem eficiência e beleza.";
+    const msg = "VVictor Diniz";
     let i = 0;
     let cancelled = false;
 
@@ -16,7 +16,7 @@ function Hero() {
       if (i < msg.length) {
         setTyped((prev) => prev + msg.charAt(i));
         i++;
-        setTimeout(write, 35);
+        setTimeout(write, 100);
       }
     };
 
@@ -32,7 +32,7 @@ function Hero() {
         <div className="hero-image">
           <img src="/assets/images/victor.jpeg" alt="Foto de Victor Diniz" />
         </div>
-        <h2>{typed || "Construindo experiências digitais que unem eficiência e beleza."}</h2>
+        <h2>{typed || "Victor Diniz"}</h2>
         <p>
           Sou um desenvolvedor full stack em formação, com foco em automação,
           front-end e interfaces inteligentes.
