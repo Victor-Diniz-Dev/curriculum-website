@@ -13,35 +13,39 @@
   color: var(--text-light);
 }
 
-/* Timeline wrapper + linha vertical */
+/* Timeline wrapper */
 .timeline {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  margin-left: 2.2rem; /* espaço pro ícone/linha */
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 16px; /* alinha com o centro do ícone (40px) */
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--primary), var(--accent));
-  opacity: 0.8;
+  margin-left: 2.2rem; /* espaço pro ícone */
 }
 
 /* Item */
 .timeline-item {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 1.2rem;
 }
 
+/* Linha vertical (AGORA DENTRO DE CADA ITEM) */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 20px; /* centralizado com ícone (40px width => 20px middle) */
+  top: 40px; /* começa abaixo do ícone */
+  height: calc(100% - 40px); /* termina acima do próximo ícone */
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--accent));
+  opacity: 0.8;
+}
+
+
 /* Ícone circular */
 .timeline-icon {
+  position: relative;
   width: 40px;
   height: 40px;
   min-width: 40px;
@@ -54,6 +58,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 12px rgba(0, 224, 199, 0.25);
+  z-index: 2;
 }
 
 /* Conteúdo */
@@ -97,25 +102,31 @@
   line-height: 1.55;
 }
 
-.timeline-list li { margin-bottom: 0.35rem; }
+.timeline-list li {
+  margin-bottom: 0.35rem;
+}
 
 /* Responsivo */
 @media (max-width: 640px) {
   .timeline {
     margin-left: 1.8rem;
   }
-  .timeline::before {
-    left: 14px;
+
+  .timeline-item::before {
+    left: 17px; /* ajusta para ícone menor */
   }
+
   .timeline-icon {
     width: 34px;
     height: 34px;
     min-width: 34px;
     min-height: 34px;
   }
+
   .timeline-role {
     font-size: 1.05rem;
   }
+
   .timeline-content {
     padding: 1rem 1.05rem;
   }
