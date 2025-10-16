@@ -4,14 +4,13 @@ function About() {
       <div className="container">
         <h3>Sobre Mim</h3>
         <p>
-          Sou apaixonado por transformar ideias em interfaces funcionais.
-          Tenho experiência com automações em Python e uma base sólida em
-          front-end. Estou expandindo meus conhecimentos para me tornar um
-          desenvolvedor full stack completo.
+          Apaixonado por usar tecnologia para resolver problemas de forma criativa e eficiente.
+          Hoje estou na área de suporte, onde aprendi a entender necessidades reais dos usuários e encontrar soluções sob pressão. Com o tempo, estou evoluindo para o desenvolvimento de automações com Python e Apps Script, criação de dashboards e documentações, integrações entre ferramentas como Slack, ClickUp e Google Sheets.
         </p>
         <p>
-          Busco oportunidades para aprender, evoluir e contribuir com soluções
-          que unam design, lógica e impacto real.
+          Hoje foco os estudos também no frontend e expandindo minhas habilidades para full stack, mergulhando em backend, APIs e arquitetura.
+        </p>
+        <p>Gosto de unir lógica, design e impacto real, seja otimizando processos, construindo interfaces ou criando soluções que facilitam a vida das pessoas.
         </p>
       </div>
     </section>
