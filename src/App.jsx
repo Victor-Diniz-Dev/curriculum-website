@@ -5,6 +5,7 @@ import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import ExperienceTimeline from "./components/ExperienceTimeline";
 import "./index.css";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Hero />
       <Stack />
       <Projects />
+      <ExperienceTimeline />
       <About />
       <Footer />
     </>
