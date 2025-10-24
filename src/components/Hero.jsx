@@ -32,12 +32,31 @@ function Hero() {
         <div className="hero-image">
           <img src="/assets/images/victor.jpeg" alt="Foto de Victor Diniz" />
         </div>
+
         <h2>{typed || "Victor Diniz"}</h2>
+
+        {/* Badge de status */}
+        <div className="status-badge">
+          <span>🔹 Aberto a oportunidades</span>
+        </div>
+
         <p>
           Sou um desenvolvedor full stack em formação, com foco em automação,
           front-end e interfaces inteligentes.
         </p>
-        <a href="#projects" className="btn">Ver Projetos</a>
+
+        {/* Botões */}
+        <div className="hero-buttons">
+          <a href="/assets/docs/Victor Diniz Currículo.pdf" className="btn secondary" target="_blank" rel="noopener noreferrer">
+            <i className="fa-solid fa-file-arrow-down"></i> Currículo
+          </a>
+          <a href="#footer" className="btn outline">
+            <i className="fa-solid fa-envelope"></i> Contato
+          </a>
+          <a href="#projects" className="btn">
+            <i className="fa-solid fa-briefcase"></i> Projetos
+          </a>
+        </div>
       </div>
     </section>
   );
