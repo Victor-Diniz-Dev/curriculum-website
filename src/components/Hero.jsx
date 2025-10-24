@@ -47,7 +47,7 @@ function Hero() {
 
         {/* Botões */}
         <div className="hero-buttons">
-          <a href="/assets/docs/Victor Diniz Currículo.pdf" className="btn secondary" target="_blank" rel="noopener noreferrer">
+          <a href="/assets/docs/Victor_Diniz_Currículo.pdf" className="btn secondary" target="_blank" rel="noopener noreferrer">
             <i className="fa-solid fa-file-arrow-down"></i> Currículo
           </a>
           <a href="#footer" className="btn outline">
