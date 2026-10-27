@@ -1,16 +1,28 @@
-# React + Vite
+# Portfólio de Victor Diniz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal em React 19 e Vite 7, com páginas para início, projetos, experiência, sobre e contato.
 
-Currently, two official plugins are available:
+## Desenvolvimento
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Requer Node.js compatível com Vite 7.
 
-## React Compiler
+```sh
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Validação e build
 
-## Expanding the ESLint configuration
+```sh
+npm run lint
+npm run build
+npm run preview
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Conteúdo
+
+Os dados de projetos, tecnologias e experiências ficam em `src/data.js`. Preencha ali informações adicionais verificáveis antes de publicar estudos de caso completos. Os detalhes atuais dos projetos exibem somente o que já existia no portfólio.
+
+## Rotas e publicação
+
+As rotas são tratadas pela aplicação e o arquivo `vercel.json` encaminha URLs diretas para o app. A Vercel pode publicar normalmente a partir do repositório GitHub após o push para a branch conectada. Não há deploy automático configurado neste projeto.

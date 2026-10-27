@@ -1,37 +1,13 @@
-function Footer() {
-  return (
-    <footer id="footer" className="footer fade-in">
-      <div className="container">
-        <p>© 2025 Victor Diniz — Feito com ❤️ e carinho.</p>
-        <div className="socials">
-          <a
-            href="https://github.com/Victor-Diniz-Dev"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
-            <i className="fa-brands fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/v1ctordiniz/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn"
-          >
-            <i className="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a
-            href="https://mail.google.com/mail/?view=cm&to=victordinizdev@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Email"
-          >
-            <i className="fa-solid fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
-  );
-}
+import { email, github, linkedin } from "../data";
 
-export default Footer;
+export default function Footer() {
+  return <footer className="site-footer">
+    <span>Victor Diniz</span>
+    <span className="footer-note">Tecnologia com atenção às pessoas.</span>
+    <div className="footer-links">
+      <a href={github} target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href={linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <a href={`mailto:${email}`}>E-mail ↗</a>
+    </div>
+  </footer>;
+}
