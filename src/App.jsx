@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { email, experience, github, linkedin, projects, technologies } from "./data";
+import { email, experience, github, instagram, linkedin, projects, technologies, whatsapp } from "./data";
 import "./App.css";
 
 function usePath() {
@@ -158,7 +158,7 @@ function AboutPage() {
 function ContactPage() {
   return <main className="page-shell container contact-page">
     <PageIntro label="CONTATO" title={<>Uma boa conversa<br /><em>começa por aqui.</em></>} text="Estou aberto a oportunidades em tecnologia, desenvolvimento e interfaces digitais." />
-    <div className="contact-list"><a href={`mailto:${email}`}><span className="eyebrow">E-MAIL</span><span>{email}</span><b>↗</b></a><a href={linkedin} target="_blank" rel="noreferrer"><span className="eyebrow">LINKEDIN</span><span>linkedin.com/in/v1ctordiniz</span><b>↗</b></a><a href={github} target="_blank" rel="noreferrer"><span className="eyebrow">GITHUB</span><span>github.com/Victor-Diniz-Dev</span><b>↗</b></a></div>
+    <div className="contact-list"><a href={`mailto:${email}`}><span className="eyebrow">E-MAIL</span><span>{email}</span><b aria-hidden="true">↗</b></a><a href={whatsapp} target="_blank" rel="noreferrer"><span className="eyebrow">WHATSAPP</span><span>(11) 97780-6572</span><b aria-hidden="true">↗</b></a><a href={instagram} target="_blank" rel="noreferrer"><span className="eyebrow">INSTAGRAM</span><span>instagram.com/_vitu.sz</span><b aria-hidden="true">↗</b></a><a href={linkedin} target="_blank" rel="noreferrer"><span className="eyebrow">LINKEDIN</span><span>linkedin.com/in/v1ctordiniz</span><b aria-hidden="true">↗</b></a><a href={github} target="_blank" rel="noreferrer"><span className="eyebrow">GITHUB</span><span>github.com/Victor-Diniz-Dev</span><b aria-hidden="true">↗</b></a></div>
   </main>;
 }
 function PageIntro({ label, title, text }) {
