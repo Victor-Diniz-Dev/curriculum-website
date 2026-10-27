@@ -57,5 +57,5 @@ export const experience = [
 export const email = "victordinizdev@gmail.com";
 export const github = "https://github.com/Victor-Diniz-Dev";
 export const linkedin = "https://www.linkedin.com/in/v1ctordiniz/";
-export const whatsapp = "https://wa.me/5511977860572";
+export const whatsapp = "https://wa.me/5511977806572";
 export const instagram = "https://www.instagram.com/_vitu.sz/";
